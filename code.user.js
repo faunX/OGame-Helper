@@ -14,12 +14,12 @@
 (function() {
     'use strict';
 
-    const RLShouldBe = 1500;
+    const RLShouldBe = 2000;
     const LLShouldBe = 1000;
-    const HLShouldBe = 100;
-    const GCShouldBe = 30;
-    const PTShouldBe = 10;
-    const ICShouldBe = 40;
+    const HLShouldBe = 500;
+    const GCShouldBe = 50;
+    const PTShouldBe = 25;
+    const ICShouldBe = 100;
     const AMShouldBe = 50;
 
     setShouldBeText('rocketLauncher', RLShouldBe);
