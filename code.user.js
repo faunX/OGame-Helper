@@ -15,6 +15,7 @@
     'use strict';
 
     const currentStage = 3;
+	const stageValue = `stage_${currentStage}`;
     const defence = [
         {
             name: 'rocketLauncher',
@@ -62,20 +63,26 @@
     const facilities = [
         {
             name: 'roboticsFactory',
-            value: 8,
+            defaultValue: 8,
         },
         {
             name: 'shipyard',
-            value: 8,
+            defaultValue: 8,
         },
         {
             name: 'missileSilo',
-            value: 3,
+			defaultValue: null,
+            stage_1: 2,
+            stage_2: 3,
+            stage_3: 4,
         }
     ];
 
-    defence.forEach(def => setShouldBeText(def.name, def[`stage_${currentStage}`]));
-    facilities.forEach(fac => setShouldBeText(fac.name, fac.value));
+    defence.forEach(def => setShouldBeText(def.name, def[stageValue]));
+    facilities.forEach(fac => {
+		const value = fac.defaultValue ? fac.defaultValue : fac[stageValue];
+		setShouldBeText(fac.name, value)
+	});
 
     function setShouldBeText(className, value) {
         const shouldBeStyling = 'style="color:#6f9fc8;bottom:5px;left:15px;position:absolute;z-index:99;"';
