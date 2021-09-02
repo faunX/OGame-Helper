@@ -55,9 +55,9 @@
         },
         {
             name: 'missileInterceptor',
-            stage_1: 10,
-            stage_2: 20,
-            stage_3: 50,
+            stage_1: 20,
+            stage_2: 30,
+            stage_3: 40,
         }
     ];
     const facilities = [
