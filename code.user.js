@@ -7,8 +7,8 @@
 // @match        https://*.ogame.gameforge.com/*
 // @icon         https://www.google.com/s2/favicons?domain=lobby.ogame.gameforge.com
 // @grant        none
-// @downloadURL  https://raw.githubusercontent.com/MrBurrBurr/OGame-Helper/master/code.user.js
-// @updateURL    https://raw.githubusercontent.com/MrBurrBurr/OGame-Helper/master/code.user.js
+// @downloadURL  https://github.com/MrBurrBurr/OGame-Helper/raw/main/code.user.js
+// @updateURL    https://github.com/MrBurrBurr/OGame-Helper/raw/main/code.user.js
 // ==/UserScript==
 
 (function() {
