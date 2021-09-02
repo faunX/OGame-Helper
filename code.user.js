@@ -79,7 +79,7 @@
 
     function setShouldBeText(className, value) {
         const shouldBeStyling = 'style="color:#6f9fc8;bottom:5px;left:15px;position:absolute;z-index:99;"';
-        const element = document.getElementsByClassName(className)[0];
+        const element = document.getElementsByClassName(`technology ${className}`)[0];
         if (element) element.innerHTML = `<p ${shouldBeStyling}>${value}</p>${element.innerHTML}`;
     }
 })();
