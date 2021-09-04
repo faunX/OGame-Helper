@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         OGame Helper
 // @namespace    https://github.com/MrBurrBurr
-// @version      0.4
+// @version      0.5
 // @description  see you in space, cowboys!
 // @author       FREDERICK
 // @match        https://*.ogame.gameforge.com/*
@@ -63,7 +63,7 @@
     const facilities = [
         {
             name: 'roboticsFactory',
-            defaultValue: 8,
+            defaultValue: 10,
         },
         {
             name: 'shipyard',
