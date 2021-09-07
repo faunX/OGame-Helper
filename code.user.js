@@ -98,8 +98,13 @@
     });
 
     function setShouldBeText(className, value) {
-        const shouldBeStyling = 'style="color:#6f9fc8;bottom:5px;left:15px;position:absolute;z-index:99;"';
-        const element = document.getElementsByClassName(`technology ${className}`)[0];
-        if (element) element.innerHTML = `<p ${shouldBeStyling}>${value}</p>${element.innerHTML}`;
+        const shouldBeStyling = 'style="color:#6f9fc8;left:5px;text-align:left;background:none;z-index:99;"';
+        const element = document.querySelector(`.technology .${className}`);
+        const amountElement = document.querySelector(`.technology .${className} > span`);
+        const amount = (amountElement) ? amountElement.dataset.value : null;
+
+        if (!element && !amount) return;
+        if (amount == value) element.remove();
+        else element.innerHTML = `<span class="amount" ${shouldBeStyling}>${value}</span>${element.innerHTML}`;
     }
 })();
