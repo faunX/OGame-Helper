@@ -54,6 +54,18 @@
             stage_3: 100,
         },
         {
+            name: 'shieldDomeSmall',
+            stage_1: 1,
+            stage_2: 1,
+            stage_3: 1,
+        },
+        {
+            name: 'shieldDomeLarge',
+            stage_1: 0,
+            stage_2: 1,
+            stage_3: 1,
+        },
+        {
             name: 'missileInterceptor',
             stage_1: 20,
             stage_2: 30,
