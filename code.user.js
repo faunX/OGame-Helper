@@ -14,7 +14,7 @@
 (function() {
     'use strict';
 
-    const currentStage = 3;
+    const currentStage = 4;
     const stageValue = `stage_${currentStage}`;
     const defence = [
         {
