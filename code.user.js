@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         OGame Helper
 // @namespace    https://github.com/MrBurrBurr
-// @version      0.7
+// @version      0.8
 // @description  see you in space, cowboys!
 // @author       FREDERICK
 // @match        https://*.ogame.gameforge.com/*
@@ -114,7 +114,7 @@
         const amount = (amountElement) ? amountElement.dataset.value : null;
 
         if (!element && !amount) return;
-        if (amount == value) element.remove();
+        if (amount >= value) element.remove();
         else element.innerHTML = `<span class="amount" ${shouldBeStyling}>${value}</span>${element.innerHTML}`;
     }
 })();
