@@ -79,7 +79,7 @@
       stage_2: 30,
       stage_3: 40,
       stage_4: 50,
-    }
+    },
   ];
   const facilities = [
     {
@@ -97,7 +97,7 @@
       stage_2: 3,
       stage_3: 4,
       stage_4: 5,
-    }
+    },
   ];
 
   defence.forEach(def => setShouldBeText(def.name, def[stageValue]));
