@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         OGame Helper
 // @namespace    https://github.com/MrBurrBurr
-// @version      0.9
+// @version      1.0
 // @description  see you in space, cowboys!
 // @author       FREDERICK
 // @match        https://*.ogame.gameforge.com/*
