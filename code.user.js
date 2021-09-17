@@ -104,11 +104,17 @@
     },
     {
       name: 'allianceDepot',
-      defaultValue: 0,
+      stage_1: 0,
+      stage_2: 0,
+      stage_3: 0,
+      stage_4: 0,
     },
     {
       name: 'repairDock',
-      defaultValue: 0,
+      stage_1: 0,
+      stage_2: 0,
+      stage_3: 0,
+      stage_4: 0,
     }
   ];
 
