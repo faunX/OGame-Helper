@@ -98,6 +98,18 @@
       stage_3: 4,
       stage_4: 5,
     },
+    {
+      name: 'naniteFactory',
+      defaultValue: 1,
+    },
+    {
+      name: 'allianceDepot',
+      defaultValue: 0,
+    },
+    {
+      name: 'repairDock',
+      defaultValue: 0,
+    }
   ];
 
   defence.forEach(def => setShouldBeText(def.name, def[stageValue]));
